@@ -1,15 +1,24 @@
-'use strict';
-const http = require('http');
-const immutable = require('immutable');
+/*
+ Gratefully adapted from https://github.com/HemingwayLee/sample-mustache-express
+*/
+const express = require('express');
+const app = express();
+const mustacheExpress = require('mustache-express');
 
-const spoonerisms = immutable.List([
-    'is this chicken on?',
-])
+app.engine('html', mustacheExpress());
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    let item = spoonerisms.get(Math.floor(Math.random()*spoonerisms.size))
-    res.end(item);
-}).listen(8000, "0.0.0.0");
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+app.use(express.static('public'))
 
-console.log('Server running at http://127.0.0.1:8000/');
+app.get('/', function(req, res) {
+    const data = {
+        time: 'a million years'
+    };
+
+    res.render('index', data);
+});
+
+app.listen(8000, () => {
+    console.log('Server running at http://localhost:8000/');
+});
