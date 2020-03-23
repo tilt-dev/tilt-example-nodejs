@@ -4,8 +4,8 @@ WORKDIR /app
 
 ADD package.json .
 ADD yarn.lock .
-RUN  yarn install
+RUN yarn install
 
-ADD index.js .
+ADD . .
 
 ENTRYPOINT [ "yarn", "run", "nodemon", "/app/index.js" ]

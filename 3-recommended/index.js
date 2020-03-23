@@ -5,9 +5,9 @@ const express = require('express');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
-app.engine('html', mustacheExpress());
+app.engine('mustache', mustacheExpress());
 
-app.set('view engine', 'html');
+app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 app.use(express.static('public'))
 
@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
         time: 'a million years'
     };
 
-    res.render('index', data);
+    res.render('index.mustache', data);
 });
 
 app.listen(8000, () => {
