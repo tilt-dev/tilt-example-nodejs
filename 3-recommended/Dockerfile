@@ -8,4 +8,4 @@ RUN yarn install
 
 ADD . .
 
-ENTRYPOINT [ "yarn", "run", "nodemon", "/app/index.js" ]
+ENTRYPOINT [ "node", "/app/index.js" ]

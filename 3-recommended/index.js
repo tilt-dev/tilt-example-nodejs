@@ -22,11 +22,11 @@ app.get('/', function(req, res) {
 });
 
 app.listen(8000, () => {
-    timeSince = getSecsElapsedSinceDeploy();
+    timeSince = getSecsSinceDeploy();
     console.log('Server running at http://localhost:8000/');
 });
 
-function getSecsElapsedSinceDeploy() {
+function getSecsSinceDeploy() {
     let curTimeMs = new Date().getTime();
     let contents = fs.readFileSync('/app/start-time.txt', 'utf8');
     let startTimeMs  = parseInt(contents.trim()) / 10**6;
