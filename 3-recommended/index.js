@@ -15,7 +15,7 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     res.render('index.mustache', {
         time: timeSince,
     });
