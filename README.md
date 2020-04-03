@@ -1,5 +1,7 @@
 # tilt-example-nodejs
 
+[![Build Status](https://circleci.com/gh/windmilleng/tilt-example-nodejs/tree/master.svg?style=shield)](https://circleci.com/gh/windmilleng/tilt-example-nodejs)
+
 An example project that demonstrates how to use Tilt to develop on a NodeJS app (using Express for serving and Mustache for templating).
 
 ## Fastest Deployment
