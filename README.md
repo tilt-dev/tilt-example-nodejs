@@ -10,7 +10,7 @@ This progression of examples shows how to start, and incrementally update your p
 
 - [0-base](0-base): the simplest way to start
 - [1-measured](1-measured): use `local_resource` to measure your deployment time
-- [2-optimize-dockerfile](2-optimize-dockerfile): be sure to optimize your Dockerfile to make good use of caching
+- [2-optimized-dockerfile](2-optimized-dockerfile): be sure to optimize your Dockerfile to make good use of caching
 - [3-recommended](3-recommended): use `live_update` for super-fast deploys
 
 ## License
