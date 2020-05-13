@@ -10,7 +10,7 @@ k8s_resource('example-nodejs', port_forwards=8000,
 # shows you how to set up a custom workflow that measures it.
 local_resource(
     'deploy',
-    'date +%s%N > start-time.txt',
+    'python now.py > start-time.txt',
 )
 
 # Add a live_update rule to our docker_build
