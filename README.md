@@ -2,11 +2,11 @@
 
 [![Build Status](https://circleci.com/gh/windmilleng/tilt-example-nodejs/tree/master.svg?style=shield)](https://circleci.com/gh/windmilleng/tilt-example-nodejs)
 
-An example project that demonstrates how to use Tilt to develop on a NodeJS app (using Express for serving and Mustache for templating). Read [doc](https://docs.tilt.dev/example_nodejs.html).
+An example project that demonstrates how to use Tilt to develop on a NodeJS app (using Express for serving and Mustache for templating).
 
 ## Fastest Deployment
 
-This progression of examples shows how to start, and incrementally update your project for the fastest possible update time. Follow along in our [NodeJS example project guide](tbd).
+This progression of examples shows how to start, and incrementally update your project for the fastest possible update time. Follow along in our [NodeJS example project guide](https://docs.tilt.dev/example_nodejs.html).
 
 - [0-base](0-base): the simplest way to start
 - [1-measured](1-measured): use `local_resource` to measure your deployment time
