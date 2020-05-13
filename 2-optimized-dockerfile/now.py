@@ -1,3 +1,3 @@
 import time
 
-print(int(time.time() * float(10^9)))
+print("%d" % (float(time.time()) * 1000 * 1000 * 1000))
