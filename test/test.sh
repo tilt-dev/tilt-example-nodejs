@@ -20,3 +20,7 @@ tilt down --file 2-optimized-dockerfile/Tiltfile
 echo "Testing 3-recommended"
 tilt ci --file 3-recommended/Tiltfile
 tilt down --file 3-recommended/Tiltfile
+
+echo "Testing 101-debugger"
+tilt ci --file 101-debugger/Tiltfile
+tilt down --file 101-debugger/Tiltfile

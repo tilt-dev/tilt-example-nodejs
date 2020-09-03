@@ -13,6 +13,11 @@ This progression of examples shows how to start, and incrementally update your p
 - [2-optimized-dockerfile](2-optimized-dockerfile): be sure to optimize your Dockerfile to make good use of caching
 - [3-recommended](3-recommended): use `live_update` for super-fast deploys
 
+## Other Configurations
+
+- [101-debugger](101-debugger): The recommended setup, exposing a debugger on port 9229 that you
+  can connect to with your favorite NodeJS debugger (chrome://inspect, VSCode, IntelliJ, etc)
+
 ## License
 
 Copyright 2020 tilt.dev
