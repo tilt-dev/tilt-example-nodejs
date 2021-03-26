@@ -1,0 +1,14 @@
+# -*- mode: Python -*-
+
+# For more on the `test_jest_yarn` extension:
+#     https://github.com/tilt-dev/tilt-extensions/tree/master/tests/javascript
+# For more on tests in Tilt: https://docs.tilt.dev/tests_in_tilt.html
+load('ext://tests/javascript', 'test_jest_yarn')
+
+# Jest is smart about what tests it runs (by default, only runs tests related to files
+# that have changed since your last commit), so it won't be too expensive to run this
+# on every file change
+# Make sure you have "scripts.test" configured in "package.json"
+#   (this is done automatically for you in some frameworks, e.g. React)
+test_jest_yarn('unit-tests', '.',)
+

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-nodejs
+  labels:
+    app: example-nodejs
+spec:
+  selector:
+    matchLabels:
+      app: example-nodejs
+  template:
+    metadata:
+      labels:
+        app: example-nodejs
+    spec:
+      containers:
+        - name: example-nodejs
+          image: example-nodejs-image
+          ports:
+            - containerPort: 8000
