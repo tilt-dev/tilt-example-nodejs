@@ -1,9 +1,0 @@
-{
-  "Extensions": [
-    {
-      "Name": "tests/javascript",
-      "ExtensionRegistry": "https://github.com/tilt-dev/tilt-extensions",
-      "TimeFetched": "2021-03-26T14:34:40.294775-04:00"
-    }
-  ]
-}
