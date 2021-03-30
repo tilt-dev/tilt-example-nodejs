@@ -10,5 +10,7 @@ load('ext://tests/javascript', 'test_jest_yarn')
 # on every file change
 # Make sure you have "scripts.test" configured in "package.json"
 #   (this is done automatically for you in some frameworks, e.g. React)
-test_jest_yarn('unit-tests', '.',)
+test_jest_yarn('unit-tests', '.',
 
+               # in CI mode, run ALL tests (not just those related to files changed since last commit)
+               run_all=config.tilt_subcommand == 'ci')

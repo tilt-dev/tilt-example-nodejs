@@ -7,5 +7,5 @@ test("bar is okay", () => {
 });
 
 test("baz is okay", () => {
-    expect("baz").toEqual("quux")
+    expect("baz").toEqual("baz")
 });
