@@ -13,4 +13,4 @@ load('ext://tests/javascript', 'test_jest_yarn')
 test_jest_yarn('unit-tests', '.',
 
                # in CI mode, run ALL tests (not just those related to files changed since last commit)
-               run_all=config.tilt_subcommand == 'ci')
+               only_changed=config.tilt_subcommand != 'ci')
