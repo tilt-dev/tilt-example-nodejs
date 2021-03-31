@@ -11,6 +11,7 @@ load('ext://tests/javascript', 'test_jest_yarn')
 # Make sure you have "scripts.test" configured in "package.json"
 #   (this is done automatically for you in some frameworks, e.g. React)
 test_jest_yarn('unit-tests', '.',
+               with_install=True,  # make sure all dependencies are present locally so you can run tests
 
                # in CI mode, run ALL tests (not just those related to files changed since last commit)
                only_changed=config.tilt_subcommand != 'ci')
