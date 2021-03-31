@@ -17,6 +17,7 @@ This progression of examples shows how to start, and incrementally update your p
 
 - [101-debugger](101-debugger): The recommended setup, exposing a debugger on port 9229 that you
   can connect to with your favorite NodeJS debugger (chrome://inspect, VSCode, IntelliJ, etc)
+- [tests-example](tests-example): an example of how to use Tilt to run your tests for you as you iterate
 
 ## License
 

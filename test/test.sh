@@ -24,3 +24,7 @@ tilt down --file 3-recommended/Tiltfile
 echo "Testing 101-debugger"
 tilt ci --file 101-debugger/Tiltfile
 tilt down --file 101-debugger/Tiltfile
+
+echo "Testing tests-example"
+tilt ci --file tests-example/Tiltfile
+tilt down --file tests-example/Tiltfile
