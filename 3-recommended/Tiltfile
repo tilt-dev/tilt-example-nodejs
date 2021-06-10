@@ -17,7 +17,7 @@ local_resource(
 congrats = "🎉 Congrats, you ran a live_update! 🎉"
 docker_build('example-nodejs-image', '.',
     build_args={'node_env': 'development'},
-    entrypoint='yarn run nodemon /app/index.js',
+    entrypoint='yarn run nodemon --ext js,mustache /app/index.js',
     live_update=[
         sync('.', '/app'),
         run('cd /app && yarn install', trigger=['./package.json', './yarn.lock']),
