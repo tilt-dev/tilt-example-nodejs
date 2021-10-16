@@ -1,8 +1,9 @@
-FROM node:10
-
 # Default value; will be overridden by build_args, if passed
-ARG node_env=production
+ARG base_name=nodeeeee
+ARG version=10
+FROM ${base_name}:${version}
 
+ARG node_env=development
 ENV NODE_ENV $node_env
 
 WORKDIR /app

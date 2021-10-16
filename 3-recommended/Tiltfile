@@ -13,10 +13,11 @@ local_resource(
     'python now.py > start-time.txt',
 )
 
+BASE_NAME='node'
 # Add a live_update rule to our docker_build
 congrats = "🎉 Congrats, you ran a live_update! 🎉"
 docker_build('example-nodejs-image', '.',
-    build_args={'node_env': 'development'},
+    build_args={'base_name': BASE_NAME},
     entrypoint='yarn run nodemon --ext js,mustache /app/index.js',
     live_update=[
         sync('.', '/app'),
