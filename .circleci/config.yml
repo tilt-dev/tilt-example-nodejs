@@ -2,12 +2,12 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: tiltdev/tilt:latest
+      - image: docker/tilt:latest
 
     steps:
       - checkout
       - setup_remote_docker:
-          version: 19.03.12
+          version: 20.10.11
       - run: apt install -y python
       - run: apt install -y npm
       - run: npm install -g yarn
