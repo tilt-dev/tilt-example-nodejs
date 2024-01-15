@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:20
 
 # Default value; will be overridden by build_args, if passed
 ARG node_env=production

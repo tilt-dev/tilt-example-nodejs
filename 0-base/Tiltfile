@@ -10,8 +10,7 @@ k8s_resource('example-nodejs', port_forwards=8000,
 # shows you how to set up a custom workflow that measures it.
 local_resource(
     'deploy',
-    'python now.py > start-time.txt',
+    'python3 now.py > start-time.txt',
 )
 
 docker_build('example-nodejs-image', '.')
-
