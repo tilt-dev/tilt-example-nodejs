@@ -6,9 +6,8 @@ jobs:
 
     steps:
       - checkout
-      - setup_remote_docker:
-          version: 20.10.11
-      - run: apt install -y python
+      - setup_remote_docker
+      - run: apt install -y python3
       - run: apt install -y npm
       - run: npm install -g yarn
       - run: ctlptl create cluster kind --registry=ctlptl-registry && test/test.sh
